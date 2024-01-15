@@ -1,3 +1,2 @@
 #!/bin/bash
-
-pthon3 -c "$PYCODE"
+pthon3 -c $PYCODE
