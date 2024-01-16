@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if the PYFILE environment variable is set
+if [ -z "$PYFILE" ]; then
+    echo "Error: PYFILE environment variable not set."
+    exit 1
+fi
+
+# Extract the filename and extension
+filename=$(basename "$PYFILE")
+filename_noext="${filename%.*}"
+
+# Compile the Python script
+python3 -m py_compile "$PYFILE"
+
+# Check if compilation was successful
+if [ $? -eq 0 ]; then
+    echo "Compilation successful. Compiled file: $filename_noext.pyc"
+else
+    echo "Compilation failed."
+fi
