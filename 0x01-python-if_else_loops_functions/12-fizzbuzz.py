@@ -11,4 +11,4 @@ def fizzbuzz():
         elif x % 3 == 0 and x % 5 == 0:
             print("FizzBuzz ", end="")
         else:
-            print(x, end="")
+            print(x, end=" ")
