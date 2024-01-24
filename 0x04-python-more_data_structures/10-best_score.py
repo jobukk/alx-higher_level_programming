@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+
+
 def best_score(a_dictionary):
+    """
+    Function to get the highest score
+    """
     if a_dictionary == None:
         return
     score = 0
