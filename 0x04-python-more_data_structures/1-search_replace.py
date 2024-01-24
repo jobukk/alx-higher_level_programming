@@ -3,6 +3,7 @@
 def search_replace(my_list, search, replace):
     """Get the element then replace."""
     new_list = my_list[:]
-    the_index = new_list.index(search)
-    new_list[the_index] = replace
+    for x in range(0,len(my_list)):
+        if my_list[x] == search:
+            new_list[x] = replace
     return new_list
