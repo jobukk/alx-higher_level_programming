@@ -4,19 +4,28 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Square class that inherits from rectangle that inherits BaseGeometry"""
-    
     def __init__(self, size):
-        """Method for init the attributes"""
+        """
+        Initialize a Square object with a given size.
 
-        super.__init__(size,size)
-        self.integer_validator("size", size)
-        self.__size = size
+        Args:
+        - size: The size of the square.
+        """
+        super().__init__(size, size)  # Call superclass constructor with width and height as size
+        self.integer_validator("size", size)  # Validate size
+        self.__size = size  # Set size as a private attribute
 
     def area(self):
-            """Area"""
+        """
+        Calculate the area of the square.
 
-            return self.__size * self.__size  
+        Returns:
+        - The area of the square.
+        """
+        return self.__size * self.__size
 
     def __str__(self):
-        return "[Square] {}/{}".format(self.__size, self.__size)          
+        """
+        Return a string representation of the Square object.
+        """
+        return "[Square] {}/{}".format(self.__size, self.__size)
