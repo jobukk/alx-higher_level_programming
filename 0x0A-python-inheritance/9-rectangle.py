@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
 """
 module with class Rectangle
 """
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     def __init__(self, width, height):
@@ -16,10 +16,9 @@ class Rectangle(BaseGeometry):
     def area(self):
         """Method to redefine area method in the parent class"""
 
-        return self.__height * self.__width    
+        return self.__height * self.__width
 
     def __str__(self):
         """__str__ method for return the nxt string"""
 
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
-
