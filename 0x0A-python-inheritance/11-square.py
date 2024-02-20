@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""module Square"""
+"""Module Square"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
+    """Represent a square."""
     def __init__(self, size):
         """
         Initialize a Square object with a given size.
