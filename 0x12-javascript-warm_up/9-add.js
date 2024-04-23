@@ -2,7 +2,7 @@
 
 const args = process.argv.slice(2);
 
-firstInt = Number(args[0])
-secondInt = Number(args[1])
+firstInt = Number(args[0]);
+secondInt = Number(args[1]);
 
-console.log(firstInt + secondInt)
+console.log(firstInt + secondInt);
