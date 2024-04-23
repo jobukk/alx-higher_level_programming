@@ -1,4 +1,5 @@
 #!/usr/bin/node
+//Maximum
 
 const args = process.argv.slice(2).map(Number);
 
